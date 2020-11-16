@@ -1,0 +1,36 @@
+<form action="/" method="post" [formGroup]="addContact">
+  <div class="input_form">
+    <label for="name">First name</label>
+    <input type="text" name="name" id="name" class="form_input clear" placeholder="Enter first name"
+      formControlName="firstName">
+  </div>
+  <div class="input_form">
+    <label for="surname">Last name</label>
+    <input type="text" name="surname" id="surname" class="form_input clear" placeholder="Enter last name"
+      formControlName="lastName">
+  </div>
+  <div class="input_form">
+    <label for="role">Role</label>
+    <select formControlName="role" name="role" id="role" class="form_input" >
+      <option *ngFor="let role of roles" [ngValue]="role">
+        {{ role }}
+      </option>
+    </select>
+  </div>
+  <p class="input_form__title">Schedule</p>
+  <div class="form_checkbox_1">
+    <label class="checkbox-btn" *ngFor="let day of days">
+        <input type="checkbox" name="schedule" class="form_input" formControlName="schedule" required>
+        <span>{{ day }}</span>
+    </label>
+  </div>
+  <div class="form_checkbox">
+    <input type="checkbox" name="isActive" id="is_active" formControlName="isActive" required>
+    <label for="is_active">Is active</label>
+  </div>
+  <div class="send_form"> 
+    <input class="send_form_btn" (click)="submit()" type="submit" name="submit" value="Cancel" [disabled]="addContact.invalid">
+    <input class="send_form_btn" (click)="clear()" type="submit" name="submit" value="Create">
+  </div>
+</form>
+

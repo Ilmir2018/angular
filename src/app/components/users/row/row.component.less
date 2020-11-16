@@ -1,0 +1,92 @@
+table {
+    width          : 1000px;
+    text-align     : center;
+    border-bottom  : 2px solid #dfdfdf;
+    border-radius  : 6px;
+    border-collapse: separate;
+    border-spacing : 0px;
+    background-color: white;
+}
+
+table thead tr td {
+    font-family   : Poppins;
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 13px;
+    line-height   : 19px;
+    letter-spacing: 0.01em;
+    color         : #334D6E;
+    opacity       : 0.5;
+}
+
+table tr td {
+    width       : 700px;
+    padding-left: 20px;
+}
+
+table tr td:last-child {
+    border-right: 0px;
+}
+
+
+table tbody tr:hover {
+    background         : #ffe8e8;
+    transition-duration: 0.6s;
+}
+
+
+table {
+
+    thead {
+        display: flex;
+
+        .check {
+            margin-bottom: 12px;
+        }
+
+        .name {
+            padding-right: 67px;
+        }
+
+        .company {
+            padding-left: 100px;
+        }
+
+        .role {
+            padding-left: 38px
+        }
+    }
+
+    tbody {
+        display: flex;
+
+        .check {
+            margin-top: 14px;
+        }
+
+        tr {
+
+            .bold_name {
+                font-family   : Poppins;
+                font-style    : normal;
+                font-weight   : 500;
+                font-size     : 15px;
+                line-height   : 22px;
+                letter-spacing: 0.01em;
+                color         : #323C47;
+
+            }
+
+            td {
+                font-family   : Poppins;
+                font-style    : normal;
+                font-weight   : normal;
+                font-size     : 13px;
+                line-height   : 19px;
+                letter-spacing: 0.01em;
+                color: #707683;
+                padding: 10px;
+            }
+        }
+    }
+}

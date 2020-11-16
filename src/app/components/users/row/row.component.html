@@ -1,0 +1,24 @@
+<table class="collapsed">
+  <thead *ngIf="index==0">
+    <input class="check" type="checkbox">
+    <tr>
+      <td class="name">{{name}}</td>
+      <td class="email">{{email}}</td>
+      <td class="company">{{company_name}}</td>
+      <td class="role">{{role}}</td>
+      <td class="forecast">{{forecast}}</td>
+      <td class="recent">{{recent_activity}}</td>
+    </tr>
+  </thead>
+  <tbody *ngIf="index!==0">
+    <input class="check" type="checkbox">
+    <tr>
+      <td class="bold_name">{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{company_name}}</td>
+      <td>{{role}}</td>
+      <td>{{forecast}} %</td>
+      <td>{{recent_activity}}</td>
+    </tr>
+  </tbody>
+</table>

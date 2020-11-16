@@ -1,0 +1,8 @@
+<div class="search"> 
+  <input type="text">
+</div>
+<div class="table">
+  <app-row *ngFor="let data of dataSource let i = index" [name]="data.name" [email]="data.email"
+    [company_name]="data.company_name" [role]="data.role" [forecast]="data.forecast"
+    [recent_activity]="data.recent_activity" [index]="i"></app-row>
+</div>

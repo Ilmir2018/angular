@@ -1,0 +1,163 @@
+form {
+    width           : 729px;
+    height          : 556;
+    margin-left     : 600px;
+    background-color: white;
+    padding-left    : 32px;
+    padding-top     : 25px;
+    border-radius   : 5px;
+
+    .input_form {
+        display       : flex;
+        flex-direction: column;
+        padding-bottom: 35px;
+
+        label {
+            font-family  : Source Sans Pro;
+            font-style   : normal;
+            font-weight  : normal;
+            font-size    : 14px;
+            line-height  : 18px;
+            display      : flex;
+            align-items  : center;
+            color        : #9D9FB5;
+            margin-bottom: 10px;
+        }
+
+        .form_input {
+            font-family     : Source Sans Pro;
+            font-style      : normal;
+            font-weight     : normal;
+            font-size       : 16px;
+            line-height     : 20px;
+            display         : flex;
+            align-items     : center;
+            color           : #9D9FB5;
+            width           : 416px;
+            height          : 48px;
+            background-color: white;
+            outline         : none;
+            border          : transparent;
+            border-radius   : 2px;
+            border          : 1px solid rgb(156, 153, 153);
+            padding-left    : 16px;
+        }
+    }
+
+    .input_form__title {
+        font-family  : Source Sans Pro;
+        font-style   : normal;
+        font-weight  : normal;
+        font-size    : 14px;
+        line-height  : 18px;
+        display      : flex;
+        align-items  : center;
+        color        : #9D9FB5;
+        margin-bottom: 10px;
+    }
+
+    .form_checkbox_1 {
+        display: flex;
+
+        .checkbox-btn {
+            display    : flex;
+            margin     : 0 5px 0 0;
+            user-select: none;
+            position   : relative;
+
+            input[type=checkbox] {
+                z-index: -1;
+                opacity: 0;
+                display: block;
+            }
+
+            span {
+                display      : inline-block;
+                cursor       : pointer;
+                padding      : 0px 10px;
+                line-height  : 30px;
+                border       : 1px solid #109CF1;
+                border-radius: 4px;
+                transition   : background 0.2s ease;
+                font-family  : Source Sans Pro;
+                font-style   : normal;
+                font-weight  : normal;
+                font-size    : 16px;
+                display      : flex;
+                align-items  : center;
+                color        : #000000;
+            }
+
+            input[type=checkbox]:checked+span {
+                background: #109CF1;
+            }
+        }
+    }
+
+    .form_checkbox {
+        margin-top: 41px;
+        display   : flex;
+
+        label {
+            font-family: Source Sans Pro;
+            font-style : normal;
+            font-weight: normal;
+            font-size  : 16px;
+            line-height: 20px;
+            display    : flex;
+            align-items: center;
+            color      : #0B1047;
+            margin-left: 10px;
+        }
+
+        input {
+            width        : 16px;
+            height       : 16px;
+            background   : #FFFFFF;
+            border       : 1px solid #109CF1;
+            box-sizing   : border-box;
+            border-radius: 2px;
+
+        }
+    }
+
+    .send_form {
+        margin-top    : 46px;
+        padding-bottom: 29px;
+
+        .send_form_btn {
+            display        : inline-flex;
+            justify-content: center;
+            align-items    : center;
+            text-align     : center;
+            width          : 97px;
+            height         : 42px;
+            border-radius  : 4px;
+            border         : none;
+            font-family   : Poppins;
+            font-style    : normal;
+            font-weight   : 600;
+            font-size     : 13px;
+            line-height   : 19px;
+            letter-spacing: 0.01em;
+            color: #109CF1;
+            text-decoration: none;
+            background     : white;
+            cursor         : pointer;
+            outline        : none;
+            margin-left: 10px;
+        }
+
+        .send_form_btn:hover {
+            border         : 1px solid #109CF1;
+        }
+    }
+
+    .checkbox-btn input[type=checkbox] {
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width  : 0;
+        height : 0;
+    }
+}
